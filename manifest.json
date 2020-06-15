@@ -1,0 +1,25 @@
+{
+  "name": "TTACT's New Tab",
+  "version": "1.0",
+  "description": "Whoa! You can add a description?!?!?! /s",
+   "permissions": ["storage"],
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' 'unsafe-inline'; object-src 'self' 'unsafe-inline'",
+  "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "images/icon16.png",
+          "32": "images/icon32.png",
+          "48": "images/icon48.png",
+          "128": "images/icon.png"
+        }
+    },
+
+ "manifest_version": 2
+}

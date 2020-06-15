@@ -1,0 +1,203 @@
+/* Setting Variables */
+:root {
+    --bg-color-dark: #313247;
+    --bg-color-mid: #393152;
+    --bg-color-light: #353c54;
+    --text-color-light: #ffffff;
+    --text-color-dark: grey;
+    --banner-one-scroll-pos: center;
+
+    /* Scrollbar Styling */
+    /* Firefox */
+    scrollbar-color: var(--text-color-light) var(--bg-color-dark);
+    scrollbar-width: thin;
+}
+
+/* Chrome */
+body::-webkit-scrollbar {
+    width: 0.5vw;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+/* Setting Background */
+body {
+    background: var(--bg-color-dark);
+}
+
+/* Setting Text Styling */
+.text {
+    color: var(--text-color-light);
+    font-family: monospace;
+    font-size: 3vw;
+    animation-name: contentload;
+    animation-duration: 1s;
+}
+
+
+h1 {
+    color: var(--text-color-light);
+    font-family: monospace;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.credits {
+    padding: 5vw;
+    color: var(--text-color-dark);
+    font-family: monospace;
+    font-size: 15px;
+}
+
+/* Menubar */
+.menubar {
+    color: var(--text-color-light);
+    font-family: monospace;
+    font-size: 3vw;
+    display: flex;
+    text-align: center;
+}
+
+.menubutton {
+    color: inherit;
+    text-decoration: none;
+    width: 100%;
+    border: var(--text-color-light) solid 1px;
+    border-radius: 2vw;
+}
+
+
+/* Set Typing Text Effect Styling */
+.typing-text {
+    margin-top: 1.3vw;
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+    font-size: 2vw;
+    text-align: center;
+    border: white;
+    height: 4.5vw;
+    width:89.6%;
+    border-radius: 2vw;
+    animation-name: typingload;
+    animation-duration: 1s;
+}
+.submit-button {
+    margin-top: 1.3vw;
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+    font-size: 2vw;
+    text-align: center;
+    border: white;
+    height: 4.5vw;
+    width:10%;
+    border-radius: 2vw;
+    animation-name: submitload;
+    animation-duration: 1s;
+}
+
+
+/* Animation */
+@keyframes selectproject {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 150%;
+    }
+}
+
+@keyframes unselectproject {
+    from {
+        background-size: 150%;
+    }
+
+    to {
+        background-size: 100%;
+    }
+}
+
+@keyframes hoveroverstats {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes unhoveroverstats {
+    from {
+        opacity: 100%;
+    }
+
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes downloadselect {
+    from {
+        box-shadow: 0px 0px 0px 0px #0005;
+    }
+
+    to {
+        box-shadow: 0px 0px 20px 5px #0005;
+    }
+}
+
+@keyframes downloadunselect {
+    from {
+        box-shadow: 0px 0px 20px 5px #0005;
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 0px #0005;
+    }
+}
+
+@keyframes typingload {
+    0% {
+        width: 0%;
+        color: transparent;
+    }
+
+    40% {
+        color: transparent;
+    }
+
+    100% {
+        width: 89.6%;
+        color: var(--text-color-light);
+    }
+}
+
+@keyframes submitload {
+    0% {
+        width: 0%;
+        color: transparent;
+    }
+
+    40% {
+        color: transparent;
+    }
+
+    100% {
+        width: 10%;
+        color: var(--text-color-light);
+    }
+}
+
+
+@keyframes contentload {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
